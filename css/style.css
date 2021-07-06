@@ -1,0 +1,868 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open-Sans', sans-serif;
+}
+
+html>body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Classes Auxiliares */
+
+.clear {
+    clear: both;
+}
+
+.w33 {
+    float: left;
+    width: 33.3%;
+}
+
+.w40 {
+    float: left;
+    width: 40%;
+}
+
+.w60 {
+    float: left;
+    width: 60%;
+}
+
+.w50 {
+    float: left;
+    width: 50%;
+}
+
+.center {
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    padding: 0 2%;
+}
+
+
+/* Header / Menu */
+
+header {
+    padding: 8px 0;
+}
+
+.logo {
+    float: left;
+}
+
+.logo h2 {
+    font-weight: normal;
+    font-size: 23px;
+    padding: 4px 0;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+nav.menu-desktop ul {
+    float: right;
+    position: relative;
+    top: 8px;
+}
+
+nav.menu-desktop li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav.menu-desktop li.selected {
+    font-weight: bold;
+}
+
+nav.menu-desktop a {
+    color: black;
+    text-decoration: none;
+}
+
+nav.menu-desktop a:hover {
+    text-decoration: underline;
+}
+
+nav.menu-mobile {
+    float: right;
+    display: none;
+}
+
+nav.menu-mobile h2 {
+    cursor: pointer;
+    padding: 5px 5px 1px 0px;
+}
+
+nav.menu-mobile ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 51px;
+    z-index: 6;
+    text-align: center;
+}
+
+nav.menu-mobile li {
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li:first-of-type {
+    border-top: 1px solid black;
+}
+
+nav.menu-mobile a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+nav.menu-mobile li.selected {
+    background-color: rgb(225, 225, 225);
+}
+
+
+/* Section Main */
+
+section.main-bg {
+    width: 100%;
+    position: relative;
+    padding: 50px 0 160px 0;
+    background-image: url(../images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    max-height: min-content;
+}
+
+section.main-bg div.overlay {
+    z-index: 1;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+}
+
+section.main-bg>.container {
+    z-index: 2;
+    position: relative;
+}
+
+section.main-bg h2 {
+    color: rgb(49, 218, 218);
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+section.main-bg p {
+    color: white;
+    font-weight: normal;
+    margin-top: 15px;
+    text-align: left;
+}
+
+
+/*Botão Saiba Mais!*/
+
+div.botao {
+    width: 230px;
+    height: 65px;
+    background-color: rgb(49, 218, 218);
+    display: flex;
+    margin: 50px auto -100px auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.botao a {
+    font-weight: lighter;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Seção 2 */
+
+section.secao2 {
+    width: 100%;
+    padding: 50px 0 20px 0;
+    background-color: white;
+    text-align: center;
+    height: min-content;
+    margin-bottom: 50px;
+}
+
+
+/*Experiência do Usuário - Texto*/
+
+div.line-text {
+    width: max-content;
+}
+
+div.line-text>div {
+    height: 5px;
+    left: 3;
+    top: 0;
+    background-color: rgb(49, 218, 218);
+}
+
+div.line-text h3 {
+    color: rgb(49, 218, 218);
+    font-size: 22px;
+    font-weight: normal;
+    margin-top: 1px;
+    margin-left: -2px;
+}
+
+
+/*Diferenciais*/
+
+div.diferenciais {
+    width: 100%;
+    background-color: white;
+    height: auto;
+    text-align: center;
+}
+
+div.box-dif-single {
+    width: 33%;
+    background-color: white;
+    height: 100px;
+    margin-top: 20px;
+    padding: 0 2%;
+    display: inline-block;
+    text-align: center;
+}
+
+div.box-dif-single h2 {
+    color: rgb(49, 218, 218);
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: 43px;
+}
+
+div.box-dif-single p {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+
+/* Seção 3 */
+
+section.secao3 {
+    padding: 40px 0 20px 0;
+    background-color: rgb(225, 225, 225);
+}
+
+div.equipe-cont {
+    width: 50%;
+    padding-left: 20px;
+}
+
+div.sobre-cont {
+    width: 50%;
+}
+
+section.secao3 div.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.sobre-cont p:not(.sobre) {
+    color: black;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+section.secao3 .line-text {
+    margin: 0 0;
+}
+
+div.pessoas {
+    margin-top: 30px;
+    display: inline-block;
+    width: max-content;
+    height: auto;
+}
+
+div.pessoa {
+    margin-bottom: 40px;
+}
+
+div.textopessoa {
+    display: inline-block;
+}
+
+div.foto {
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-image: url(../images/foto.jpg);
+    background-size: contain;
+    display: inline-block;
+}
+
+h3.nome {
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 7px;
+    font-style: italic;
+    width: max-content;
+    font-weight: normal;
+}
+
+p.funcao {
+    font-size: 14px;
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 7px;
+    font-weight: lighter;
+}
+
+div.botao2 {
+    width: 180px;
+    height: 45px;
+    background-color: rgb(49, 218, 218);
+    display: flex;
+    margin: -3px auto 0px 2px;
+    text-align: center;
+    cursor: pointer;
+}
+
+div.botao2 a {
+    font-weight: lighter;
+    font-size: 17px;
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Seção 4 */
+
+section.secao4 {
+    background-color: rgb(49, 218, 218);
+    padding: 20px;
+}
+
+h2.inscricao-texto {
+    color: white;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+.inscricao-form input[type=text] {
+    width: calc(70% - 100px);
+    height: 37px;
+    display: inline-block;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+.inscricao-form input[type=submit] {
+    width: 100px;
+    height: 35px;
+    display: inline-block;
+    background-color: rgb(31, 146, 146);
+    border: 0;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+/* Seção 5 */
+
+section.secao5 {
+    padding: 30px 0;
+}
+
+div.card-single {
+    float: left;
+    width: 33.3%;
+    padding: 45px;
+}
+
+div.card-single img {
+    width: 100%;
+    padding-bottom: 3px;
+}
+
+div.card-single h3 {
+    font-size: 19px;
+    font-weight: normal;
+    padding-bottom: 3px;
+    margin: 5px 0;
+}
+
+div.card-single p {
+    font-size: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 10px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+
+/* Footer 1 */
+
+footer.footer1 {
+    background-color: rgb(49, 218, 218);
+    padding: 20px 0;
+    color: white;
+}
+
+footer.footer1 div.container {
+    width: 100%;
+}
+
+footer.footer1 h2 {
+    font-size: 23px;
+    font-weight: normal;
+}
+
+footer.footer1 p {
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+div.w33>a {
+    color: white;
+    display: block;
+    margin: 4px 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.links_uteis {
+    text-align: center;
+}
+
+.links_uteis h2 {
+    margin-bottom: 10px;
+}
+
+.conec {
+    float: right;
+}
+
+div.w33>a:hover {
+    text-decoration: underline;
+}
+
+div.icons h2 {
+    margin-top: 10px;
+}
+
+div.icons a {
+    display: inline-block;
+    font-size: 22px;
+    margin: 15px 8.5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Footer 2 */
+
+footer.footer2 {
+    background-color: rgb(31, 146, 146);
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+
+/* Página Sobre */
+
+section.title-page {
+    width: 100%;
+    min-height: 150px;
+    padding: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+section.title-page div.container {
+    position: relative;
+    z-index: 5;
+}
+
+section.title-page h2 {
+    color: rgb(49, 218, 218);
+    font-size: 35px;
+    font-weight: normal;
+}
+
+section.title-page p {
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.overlay__title-page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Sobre: Container da notícia */
+
+section.sobre__noticia {
+    padding: 30px 0;
+}
+
+div.sobre__single_noticia img {
+    max-width: 100%;
+    float: left;
+    width: 50%;
+}
+
+div.sobre__single_noticia p {
+    float: left;
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    font-weight: lighter;
+    padding: 10px 15px;
+    width: 50%;
+}
+
+div.sobre__single_noticia p.p100 {
+    padding-left: 0;
+}
+
+
+/* Efeito Parallax na Página Sobre */
+
+section.parallax {
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+section.parallax p {
+    color: black;
+    font-weight: bolder;
+    margin-top: 15px;
+}
+
+section.parallax h2.chamada-parallax {
+    border: 1px solid #44d4c5;
+    padding: 5px 25px;
+    color: #44d4c5;
+    font-size: 25px;
+    display: inline-block;
+}
+
+
+/* Seção Equipe - Página Sobre */
+
+section.equipe {
+    padding: 40px 0;
+}
+
+div.equipe-circles {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.equipe-circle-single {
+    padding: 0 20px;
+    text-align: center;
+    width: 33.3%;
+}
+
+div.equipe-circle-single h3 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.equipe-single-circle p {
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.avatar-single {
+    position: relative;
+    width: 60%;
+    padding-top: 60%;
+    margin: 0 auto;
+}
+
+.avatar-single-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #ccc;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: 100% 100%;
+}
+
+
+/* Seção Sobre-Final */
+
+section.sobre__final {
+    background-color: rgb(235, 235, 235);
+    border: 2px solid rgb(200, 200, 200);
+    padding: 20px 0;
+}
+
+section.sobre__final p {
+    font-weight: lighter;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card-text {
+    position: relative;
+}
+
+.card-text img {
+    max-width: 80%;
+    margin-top: 10px;
+}
+
+.card-text h3 {
+    color: black;
+    font-size: 20px;
+    font-weight: normal;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    padding-right: 20%;
+}
+
+
+/* Página Contato */
+
+section.contato {
+    padding: 30px 0;
+    min-height: 500px;
+}
+
+section.contato .w50,
+section.contato .w100 {
+    padding: 0 10px;
+}
+
+.formulario form {
+    margin-top: 15px;
+}
+
+.formulario h2 {
+    background-color: #dddddd;
+    text-align: center;
+    color: black;
+    font-size: 17px;
+    font-weight: normal;
+    border-left: 5px solid #777;
+    padding: 4px 0;
+}
+
+.formulario input[type=text],
+.formulario input[type=email] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+
+.formulario input[type=submit] {
+    width: 140px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-left: 10px;
+    font-size: 15px;
+    background-color: #249b8f;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+.formulario textarea {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-left: 8px;
+    resize: vertical;
+}
+
+.tags-form {
+    padding-left: 50px;
+}
+
+.tags-form h2 {
+    font-weight: normal;
+}
+
+.tags-form p {
+    font-weight: lighter;
+    font-size: 15px;
+    margin: 5px auto 10px auto;
+}
+
+.tags-form p.tag-contato {
+    color: white;
+    background-color: #249b8f;
+    margin-top: 6px;
+    text-align: center;
+    padding: 8px 4px;
+    cursor: pointer;
+}
+
+
+/* Media Screen / Responsivo */
+
+@media screen and (max-width 1280px) {
+    section.contato {
+        min-height: 0px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    div.box-dif-single {
+        width: 45%;
+    }
+    div.card-single {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.box-dif-single {
+        width: 100%;
+    }
+    div.equipe-cont {
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    div.sobre-cont {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 20px;
+    }
+    .card-text img {
+        max-width: 100%;
+    }
+    .e30 {
+        margin-top: 15px;
+    }
+    .w60,
+    .w50,
+    .w40,
+    .w33 {
+        width: 100%;
+    }
+    .inscricao-texto {
+        margin-bottom: 20px;
+    }
+    .inscricao-form {
+        margin-bottom: 10px;
+    }
+    div.botao2 {
+        margin-bottom: 20px;
+    }
+    div.card-single {
+        width: 100%;
+        padding: 13px;
+    }
+    footer.footer1 .container div {
+        text-align: center;
+        float: none;
+        margin-top: 30px;
+    }
+    .links_uteis h2 {
+        margin-bottom: 5px;
+    }
+    .conec {
+        margin-bottom: -25px;
+    }
+    div.sobre__single_noticia img {
+        max-width: 100%;
+        float: left;
+        width: 100%;
+    }
+    div.sobre__single_noticia p {
+        float: left;
+        line-height: 25px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: justify;
+        font-weight: lighter;
+        padding: 10px 15px;
+        width: 100%;
+    }
+    div.sobre__single_noticia p.p100 {
+        padding-left: 15px;
+    }
+    .tags-form {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.card-single {
+        padding: 10px;
+    }
+    nav.menu-desktop {
+        display: none;
+    }
+    nav.menu-mobile {
+        display: block;
+    }
+    div.equipe-circle-single {
+        padding: 0px 8px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
